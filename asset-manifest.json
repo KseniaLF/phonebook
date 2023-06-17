@@ -1,0 +1,10 @@
+{
+  "files": {
+    "main.js": "/phonebook/static/js/main.2bc9c843.js",
+    "index.html": "/phonebook/index.html",
+    "main.2bc9c843.js.map": "/phonebook/static/js/main.2bc9c843.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.2bc9c843.js"
+  ]
+}
