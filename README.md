@@ -10,4 +10,4 @@ Technologies used in Frontend: `React`, `Redux`, `styled-components`, `AJAX`
 
 Of course the application has its own backend located in [this repository](https://github.com/KseniaLF/backend-phonebook). \
 The stack of technologies used on the backend: 
-`Node/Express', 'MongoDB', 'jsonwebtoken`
+`Node/Express`, `MongoDB`, `jsonwebtoken`
