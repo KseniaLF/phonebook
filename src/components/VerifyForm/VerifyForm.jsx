@@ -4,47 +4,30 @@ import { FormWrapper, Input } from 'components/LoginForm/LoginForm.styled';
 import { useDispatch } from 'react-redux';
 import { register } from 'redux/auth/operations';
 
-let userSchema = object({
-  name: string().required('Enter a name'),
+let emailSchema = object({
   email: string().email('Not valid email').required('Enter a email'),
-  password: string().required('Enter a password'),
 });
 
-export const RegisterForm = () => {
+export const VerifyForm = () => {
   const dispatch = useDispatch();
 
-  const handleSubmit = async (value, { resetForm }) => {
+  const handleSubmit = (value, { resetForm }) => {
     console.log(value);
-    const data = await dispatch(register(value));
-
-    console.log(data);
-
+    dispatch(register(value));
     resetForm();
   };
 
   return (
     <Formik
-      initialValues={{ name: '', email: '', password: '' }}
-      validationSchema={userSchema}
+      initialValues={{ email: '' }}
+      validationSchema={emailSchema}
       onSubmit={handleSubmit}
     >
       <FormWrapper>
-        <label htmlFor="name">
-          Name
-          <Input type="name" name="name" placeholder="Cat" />
-          <ErrorMessage name="name" />
-        </label>
-
         <label htmlFor="email">
           Email
           <Input type="email" name="email" placeholder="cat@email.com" />
           <ErrorMessage name="email" />
-        </label>
-
-        <label htmlFor="password">
-          Password
-          <Input type="password" name="password" placeholder="password" />
-          <ErrorMessage name="password" />
         </label>
 
         <button type="submit">Submit</button>

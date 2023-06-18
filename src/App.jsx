@@ -12,6 +12,7 @@ import { RestrictedRoute } from './components/Auth/RestrictedRoute';
 import { PrivateRoute } from './components/Auth/PrivateRoute';
 import { useAuth } from 'hooks';
 import { Navigation } from './components/Navigation/Navigation';
+import VerifyPage from 'pages/VerifyPage';
 
 export const App = () => {
   const dispatch = useDispatch();

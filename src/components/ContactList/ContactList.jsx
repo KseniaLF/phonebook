@@ -14,9 +14,9 @@ export const ContactList = () => {
   return (
     <ContactContainer>
       <ul>
-        {contacts.map(({ name, number, id }) => (
+        {contacts.map(({ name, phone, _id: id }) => (
           <li key={id}>
-            {name}: {number}
+            {name}: {phone}
             <DeteleBtn onClick={() => handleDelete(id)}>
               <MdDeleteForever />
             </DeteleBtn>
