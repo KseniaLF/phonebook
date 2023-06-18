@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { createAsyncThunk } from '@reduxjs/toolkit';
 
-axios.defaults.baseURL = process.env.REACT_APP_DB_HOST;
+axios.defaults.baseURL = 'https://back-phonebook.onrender.com';
 
 // Utility to add JWT
 const setAuthHeader = token => {
