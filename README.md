@@ -1,6 +1,7 @@
 ## PhoneBook
 
 #### You can register and store your contact information right there)
+#### Use random email.)
 
 Live page [here](https://ksenialf.github.io/phonebook/). 
 
